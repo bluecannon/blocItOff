@@ -3,6 +3,8 @@ var app = angular.module('blocItOff', ["firebase"]);
 app.controller("blocItOff.controller", ["$scope", "$firebase",
   function($scope, $firebase) {
     var ref = new Firebase("https://blistering-heat-9377.firebaseIO.com/data");
+    //var ref = new Firebase("https://blistering-heat-9377.firebaseIO.com/taskList");
+
     // create an AngularFire reference to the data
     var sync = $firebase(ref);
     // download the data into a local object
@@ -10,6 +12,7 @@ app.controller("blocItOff.controller", ["$scope", "$firebase",
 
     var syncObject = sync.$asObject();
     syncObject.$bindTo($scope, "data");
+    
     // simple JSON output test for angular filter
     //$scope.subText = "Current Tasks"; 
 
