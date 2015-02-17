@@ -1,0 +1,17 @@
+<section class="section-base">
+    <h1 class="h1-section"> Welcome to BlocItOff! </h1>
+    <!-- anything typed in here is magically saved to firebase! -->
+    <header class="title">
+       <p class="p-title">Current Tasks</p>
+    </header>
+    
+    <div id="main">
+       <ul id='task-items' class='task-item-details'>
+         <li ng-repeat='msg in messages'>
+            <strong class='currentTask-title'>{{msg.from}}</strong>
+            {{msg.body}}
+         </li>
+       </ul>
+    </div>
+    <footer></footer>
+</section>
