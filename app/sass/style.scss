@@ -17,7 +17,7 @@
          display: table-cell;
          vertical-align: middle;
          padding:0px 0px 0px 20px;
-         font-size:1.7em;
+         font-size:1.6em;
   }
 
   .h1-section{
@@ -31,5 +31,21 @@
   #main{
          height:370px;
          width:370px;
-         background:#EFEEEC;
+         background:#E8E8E8;
+  }
+
+  .current-task{
+         height:50px;
+         width:350px;
+         background:#F3F3F3;
+         display:block;
+         color:#524b7d;
+         text-align:left;
+         display: table-cell;
+         vertical-align: middle;
+         padding:0px 0px 0px 20px;
+         font-size:1.3em;           
+         border:0px 0px 0.5px 0px;
+         border-style:solid;
+         border-color:#F3F3F3 #F3F3F3 #DEDEDE #F3F3F3;
   }
