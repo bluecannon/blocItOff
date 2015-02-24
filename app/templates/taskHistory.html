@@ -6,7 +6,7 @@
     </nav>
     <!-- anything typed in here is magically saved to firebase! -->
     <header class="title">
-        <p class="p-title">Current Tasks</p>
+        <p class="p-title">Task History</p>
     </header>
     <nav class="nav-header">
         <span class="nav-header-space"></span>Task description
@@ -18,9 +18,9 @@
     <div id="main">   
        <div>
          <ul id='task-items' class='task-item-details'>
-           <li ng-repeat='task in tasks' ng-hide="task.status=='inactive'">
-             <!-- test... {{ task | json }} -->
-             <!-- test... {{task.task}} -->
+           <li ng-repeat='task in tasks' ng-show="task.status=='inactive'">
+             {{ task | json }} 
+             {{task.task}} 
              <strong class='current-task'>{{task.task}}</strong>
            </li>
          </ul>
