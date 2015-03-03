@@ -1,47 +1,110 @@
- html,body,section,header,footer{
+ html,body{
          padding:0;
-         margin:0;
+         margin:20px 0 0 40px;
+         height:500px;
+         width:370px;
   }
 
- .navbar{
-    margin: 0 0 3px 150px;
-    a {
-       color: #777A7C;   
-       font-size:1.2em;   
-       text-transform: Capitalize;
-       font-weight: 700;
-       font-family: "Noto Sans";
-       letter-spacing: 1.1;
-       text-align: right;
-       &:hover {
+ .row-height{
+         height:50px;
+ }
+
+ .bloc-navbar{
+         margin-left: 120px;
+ }
+
+/*
+ a.bloc-navbar-item{
+         font-size:1.2em;  
+         text-align: right; 
+         font-weight: 600;
+         letter-spacing: 1.0;
+         text-decoration:underline;
+         cursor: default;
+         color:#1818D6;
+ }
+
+ a.bloc-navbar:visited {
+         color:#1E90B9;
+ }
+
+ a.bloc-navbar:hover {
+         color:#B818A0;
+ } 
+
+ a.bloc-navbar:active {
+         color:#0B803E;
+ }
+*/
+
+ .bloc-navbar{
+         margin: 0 0 2px 180px;
+
+      a {
+         color: #344CD4;   
+         font-size:1.2em;  
+         text-align: right; 
+         font-weight: 600;
+         letter-spacing: 1.0;
+         text-decoration:underline;
+         cursor: default;
+
+         &:hover {
+         color: #B818A0;
+         }
+       
+         &:active {
+         color: #0B803E;
+         }
+/*
+         &:visited {
+         color:#1E90B9;
+         }
+*/     }
+ }
+
+ .navbar-profile{
+         padding-left:190px;
+      a {
+         color:#0C2A8D;
+         font-size:1.1em;
+         text-align: right;
+      &:hover {
          color: #B818A0;
          text-decoration:underline;
        }
        &:active {
          color:#721A0D;
          text-decoration:underline;
-       }
-       
+       }      
        &:visited {
          color:#1E90B9;
          text-decoration:underline;
        }
-    }
- }
-
-  .nav-header{
-         height:25px;
-         width:370px;
-         background:#E3E3DE;
-         display:block;
-         color:#3F3F3B;
-         font-family: "Noto Sans";
-         font-size:1.0em;
+    }     
   }
 
- .nav-header-space{
-    margin-left:10px;
- }
+  .task-header{
+         line-height:30px;
+         width:100%;
+         background:#C4C4CE;
+         /*display:block; */
+         color:#3F3F3B;
+         font-family: "Noto Sans";
+         font-size:1em;
+         text-align:middle;
+         padding-left:10px;
+  }
+
+ .task-header-space{
+         margin-left:10px;
+         background:#C4C4CE;
+ } 
+
+ .task-header-space1{
+         margin-left:30px;
+         background:#C4C4CE;
+ } 
 
  .add-task{
          height:40px;
@@ -68,16 +131,25 @@
          font-size:1.4em;
          font-weight:bold;
          color:#fcfcfc；
- }
+  }
 
- .home-content{
+  .add-task-btn{
+         background:#2567C3;
+         color:#fff;
+         font-size:1.2em;
+  }
+
+  .home-content{
+         width:100%;
+         height:380px;
          color:#525657;
+         background:#E8E8E8;
          font-weight:bold;
          font-family: "Noto Sans";
          font-size:1.5em;
-         padding: 20px 0 0 0px;
+         padding: 20px 0 0 10px;
          text-align: middle;
- }
+  }
 
   .h1-section{
          color:#2a2374;
@@ -88,42 +160,39 @@
          margin-bottom: 8px;
   }
 
-  .section-base {
-         margin:30px 0px 0px 40px;
-  }
-
-  .title{
-         height:50px;
-         width:350px;
-         background:#D1D1CF;
-         display:block;
+  .header-title{
+         width:100%; 
+         height:40px;
          color:#524b7d;
-         text-align:left;
-         display: table-cell;
+         background:#A5A5AB;
          vertical-align: middle;
-         padding:0px 0px 0px 20px;
+         text-align:left;
+         padding:10px 0 0 10px;
          font-size:1.6em;
   }
 
-  #main{
-         height:370px;
-         width:370px;
-         background:#E8E8E8;
-  }
-
-  .current-task{
-         height:30px;
-         width:360px;
-         background:#F3F3F3;
-         display:block;
+  .title{
+         width:100%; 
+         height:100%;
+         background:#D1D1CF;
          color:#524b7d;
          text-align:left;
          display: table-cell;
          vertical-align: middle;
+         font-size:1.6em;
+  }
+
+  .task-item{
+         height:30px;
+         width:100%;
+         background:#F5F5EF;
+         display:block;
+         color:#524b7d;
+         text-align:middle;
          font-family: "Noto Sans";
          font-size:1.1em;  
-         padding-left:10px;         
-         border:0px 0px 0.5px 0px;
+         padding-left:5px;         
+         border:0px 0px 0.1px 0px;
          border-style:solid;
          border-color:#F3F3F3 #F3F3F3 #DEDEDE #F3F3F3;
   }

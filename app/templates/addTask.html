@@ -1,65 +1,49 @@
-<section class="section-base">
-    <nav class="navbar"> 
-        <a ui-sref='history-tasks'>Task history</a>
-        <span class="left-space"></span>
-        <a ui-sref='currentTask'  class="navbar-active-tasks">Active tasks</a>
-    </nav>
-    <!-- anything typed in here is magically saved to firebase! -->
-    <header class="title">
-        <p class="p-title">Current Tasks</p>
+<section>
+  <div class="row">
+    <header class="col-md-4 header-title">
+        <h1>Add Tasks</h1>
     </header>
-    <nav class="nav-header">
-        <span class="nav-header-space"></span>Task description
-        <span class="nav-header-space"></span>Priority
-        <span class="nav-header-space"></span>Start date
-        <span class="nav-header-space"></span>End date 
-        <span class="nav-header-space"></span>State
-    </nav>
-    <div id="main">   
-       <div>
-         <ul id='task-items' class='task-item-details'>
-           <li ng-repeat='task in tasks'>
-             <strong class='current-task'>{{task.task}}</strong>
-           </li>
-         </ul>
-       </div> 
+  </div>
+  <nav class="task-header">   <!-- task-header -->
+        <span class="task-header-space"></span>Task 
+        <span class="task-header-space1"></span>Priority
+        <span class="task-header-space"></span>Start date
+        <span class="task-header-space"></span>End date 
+        <span class="task-header-space"></span>Status
+        <span class="task-header-space"></span>Complete
+  </nav>
 
-       <div id="add-task" ng-controller="addTask.controller">
-            <form name="taskForm">   
-               <input type="text" 
-                      name="task" 
-                      placeholder="enter task description"
-                      ng-model="newTask"
-                      ng-model-options="{ getterSetter: true }">
-               <br/>
-               <input type="text" 
-                      name="priority"
-                      placeholder="enter priority:high/mid/low"
-                      ng-model="priority"
-                      ng-model-options="{ getterSetter: true }">
-               <span class="add-task-bar"></span>
-               <br/>
-               <input type="text" 
-                      name="startDate"
-                      placeholder="enter start date"
-                      ng-model="startDate"
-                      ng-model-options="{ getterSetter: true }">
-               <span class="add-task-bar"></span>
-               <br/>
-               <input type="text" 
-                      name="endDate"
-                      placeholder="enter end date"
-                      ng-model="endDate"
-                      ng-model-options="{ getterSetter: true }">
-               <span class="add-task-bar"></span>
-            </form>
+     <!-- display current tasks here. -->
+     <div  class="col-md-4">
+        <ul>
+          <li ng-repeat='task in tasks' ng-hide="task.status=='inactive'">
+             <strong class='task-item'>{{task.task}}</strong>
+          </li>
+        </ul>
+     </div> 
 
-            <div class="add-task-button">
-              <a ui-sref='addTask'>Add task</a>
-            </div>
-       </div>   
-       
+     <div id="add-task" ng-controller="addTask.controller">
+           <br/>    
+           <input ng-model="task.task"                            
+                  type="text" 
+                  name="task" 
+                  id="taskDescription"
+                  placeholder="enter task description">
+           <br/>
+          
+           <input ng-model="task.priority"
+                  ng-keydown="addMessage($event)" 
+                  type="text" 
+                  name="priority"
+                  id="taskPriority"
+                  placeholder="enter priority:high/mid/low">
+
+           <span class="add-task-bar"></span>
+           <br/>
+
+        <div>
+           <button type="submit" class="btn btn-default btn-lg add-task-btn" ui-sref='addTask'>Add</button>
+        </div>
     </div>
-    <footer></footer>
-    
-</section>
+    <footer></footer> 
+</section> 

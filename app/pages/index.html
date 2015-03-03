@@ -15,7 +15,13 @@
    <script src="/js/app.js"></script>
 </head>
 <body>  
-  <!-- Render templates here -->
-  <div ui-view></div> 
+  <nav class="navbar bloc-navbar"> 
+        <a class="bloc-navbar-item" ui-sref='home'>Home</a>
+        <a class="bloc-navbar-item" ui-sref='taskHistory'>Task history</a>
+        <a class="bloc-navbar-item" ui-sref='currentTask'>Active tasks</a>
+  </nav>
+  <div class="container">
+       <div class="col-md-6" ui-view></div>
+  </div>
 </body>
 </html>

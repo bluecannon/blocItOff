@@ -1,34 +1,29 @@
-<section class="section-base">
-    <nav class="navbar"> 
-        <a ui-sref='taskHistory'>Task history</a>
-        <span class="left-space"></span>
-        <a ui-sref='currentTask'>Active tasks</a>
-    </nav>
-    <!-- anything typed in here is magically saved to firebase! -->
-    <header class="title">
-        <p class="p-title">Task History</p>
-    </header>
-    <nav class="nav-header">
-        <span class="nav-header-space"></span>Task description
-        <span class="nav-header-space"></span>Priority
-        <span class="nav-header-space"></span>Start date
-        <span class="nav-header-space"></span>End date 
-        <span class="nav-header-space"></span>State
-    </nav>
-    <div id="main">   
-       <div>
-         <ul id='task-items' class='task-item-details'>
-           <li ng-repeat='task in tasks' ng-show="task.status=='inactive'">
-             {{ task | json }} 
-             {{task.task}} 
-             <strong class='current-task'>{{task.task}}</strong>
-           </li>
-         </ul>
-       </div> 
-       <div class="add-task-button">
-          <a ui-sref='addTask'>Add task</a>
-       </div>
-    </div>
-    <footer></footer>
+<section>
+   <div class="row">
+      <header class="col-md-4 header-title">
+         <h1>Task History</h1>
+      </header>
+   </div>
+   <nav class="task-header">
+        <span class="task-header-space"></span>Task 
+        <span class="task-header-space1"></span>Priority
+        <span class="task-header-space"></span>Start date
+        <span class="task-header-space"></span>End date 
+        <span class="task-header-space"></span>Status
+        <span class="task-header-space"></span>Complete
+   </nav>
     
+     <div class="col-md-4">        
+       <ul>
+          <li ng-repeat='task in tasks' ng-show="task.status=='inactive'">
+                <!--{{ task | json }} 
+                    {{task.task}} -->
+             <strong class="task-item">{{task.task}}</strong>
+          </li>
+        </ul>      
+     </div>
+     <div>
+          <button type="button" class="btn btn-default btn-lg add-task-btn" ui-sref='addTask'>Add task</button>
+     </div>      
+    <footer></footer>    
 </section>

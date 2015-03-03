@@ -107,20 +107,22 @@ blocItOff.controller('addTask.controller', ['$scope', '$firebase', function($sco
     syncObject.$bindTo($scope, "tasks");
     $scope.subText = "Add Task";  
 
-    //$scope.tasks = sync.$asArray();
-    $scope.messages = sync.$asArray();
+    $scope.tasks = sync.$asArray();
+    //$scope.messages = sync.$asArray();
         
     // add message method
     
-    $scope.addMessage = function(e) { 
-       if (e.keyCode === 13 && $scope.task.task && $scope.task.priority) { 
-          var task = $scope.task.task;
-          var priority = $scope.task.priority;
-          $scope.messages.$add({task:task, status:"active", priority:priority});
+    //$scope.addMessage = function(e) { 
+    //   if (e.keyCode === 13 && $scope.taskDescription) { 
+    //      var taskDescription = $scope.taskDescription;
+          /*var newTask = $scope.newTask;*/
+    //      $scope.messages.$add({task:taskDescription, status:"active"});
           // clear task
-          $scope.task.task = "";
-          $scope.task.status = "";
-          $scope.task.priority= "";
-       }
-     }
+    //      $scope.taskDescription = "";
+    //   }
+
+    $scope.addMessage = function(e) {
+       var task = $scope.tasks;
+       $scope.tasks.$add({task:task, status:"active"});
+    }    
 }]);

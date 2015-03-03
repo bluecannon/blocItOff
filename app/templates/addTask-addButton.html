@@ -1,0 +1,66 @@
+<section>
+  <div class="row">
+    <header class="col-md-4 header-title">
+        <h1>Add Tasks</h1>
+    </header>
+  </div>
+  <nav class="task-header">   <!-- task-header -->
+        <span class="task-header-space"></span>Task description
+        <span class="task-header-space"></span>Priority
+        <span class="task-header-space"></span>Start date
+        <span class="task-header-space"></span>End date 
+        <span class="task-header-space"></span>State
+        <span class="task-header-space"></span>
+  </nav>
+
+  <div class="row">  
+     <!-- Do not display current tasks here. -->
+     <div  class="col-md-4">
+        <ul>
+          <li ng-repeat='task in tasks'>
+             <strong class='task-item'>{{task.task}}</strong>
+          </li>
+        </ul>
+     </div> 
+
+     <div id="add-task" ng-controller="addTask.controller">    
+        <form ng-submit="addMessage($event)">
+           <input ng-model="newTask"              
+                  type="text" 
+                  name="task" 
+                  id="taskDescription"
+                  placeholder="enter task description">
+           <br/>
+           <!-- push a new message into the array -->  
+           <button type="submit" class="btn btn-default btn-lg" ui-sref="addTask">Add</button>   
+        </form>
+           <!--
+           <input type="text" 
+                  name="priority"
+                  id="taskPriority"
+                  placeholder="enter priority:high/mid/low"
+                  ng-model="priority"
+                  ng-model-options="{ getterSetter: true }">
+           <span class="add-task-bar"></span>
+           <br/>
+           <input type="text" 
+                  name="startDate"
+                  placeholder="enter start date"
+                  ng-model="startDate"
+                  ng-model-options="{ getterSetter: true }">
+           <span class="add-task-bar"></span>
+           <br/>
+           <input type="text" 
+                  name="endDate"
+                  placeholder="enter end date"
+                  ng-model="endDate"
+                  ng-model-options="{ getterSetter: true }">
+           <span class="add-task-bar"></span> -->
+           
+      <!--  
+      <form ng-submit="addMessage(newTask)">
+           <button type="submit" class="btn btn-default btn-lg add-task-btn" ui-sref='addTask'>Add</button>
+      </form> --> 
+    </div>
+    <footer></footer>   
+</section> 
