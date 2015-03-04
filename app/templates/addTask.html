@@ -1,36 +1,34 @@
 <section>
   <div class="row">
-    <header class="col-md-4 header-title">
-        <h1>Add Tasks</h1>
-    </header>
+    <header class="col-sm-12 col-md-12 title-header">Add Tasks</header>
   </div>
-  <nav class="task-header">   <!-- task-header -->
-        <span class="task-header-space"></span>Task 
-        <span class="task-header-space1"></span>Priority
-        <span class="task-header-space"></span>Start date
-        <span class="task-header-space"></span>End date 
-        <span class="task-header-space"></span>Status
-        <span class="task-header-space"></span>Complete
-  </nav>
-
-     <!-- display current tasks here. -->
-     <div  class="col-md-4">
-        <ul>
-          <li ng-repeat='task in tasks' ng-hide="task.status=='inactive'">
-             <strong class='task-item'>{{task.task}}</strong>
-          </li>
-        </ul>
-     </div> 
-
-     <div id="add-task" ng-controller="addTask.controller">
+  <!-- task-header -->
+  <div class="task-header row">   
+    <div class="col-sm-4 col-md-4">Task</div>
+    <div class="col-sm-2 col-md-2 task-header-space1">Priority</div>
+    <!-- <div class="task-header-space"></div>Start date -->
+    <!-- <span class="task-header-space"></span>End date  -->
+    <div class="col-sm-3 col-md-3 task-header-space2">Status</div>
+    <div class="col-sm-3 col-md-3 task-header-space3">Complete</div>
+  </div>
+  <div class="row task-item" ng-repeat='task in tasks' ng-hide="task.status=='inactive'">
+    <!-- display current tasks here. -->
+    <div class='col-sm-4 col-md-4'>{{task.task}}</div>
+    <div class="col-sm-2 col-md-2 priority-space">{{task.priority}}</div>
+    <div class="col-sm-3 col-md-3 priority-space">{{task.status}}</div>
+    <div class="col-sm-3 col-md-3">
+         <!--<span ng-app="ngToggle" ng-controller="toggle.controller">-->
+         <button class="btn btn-xs complete-btn" ng-click="completeTask(task)">Complete</button> 
+    </div>
+  </div>
+     <div id="add-task">
            <br/>    
            <input ng-model="task.task"                            
                   type="text" 
                   name="task" 
                   id="taskDescription"
                   placeholder="enter task description">
-           <br/>
-          
+           <br/>         
            <input ng-model="task.priority"
                   ng-keydown="addMessage($event)" 
                   type="text" 
@@ -40,9 +38,8 @@
 
            <span class="add-task-bar"></span>
            <br/>
-
         <div>
-           <button type="submit" class="btn btn-default btn-lg add-task-btn" ui-sref='addTask'>Add</button>
+           <button type="submit" class="btn btn-sm add-task-btn" ng-click='addTask(task)'>Add</button>
         </div>
     </div>
     <footer></footer> 

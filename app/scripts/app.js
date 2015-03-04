@@ -114,13 +114,25 @@ blocItOff.controller('addTask.controller', ['$scope', '$firebase', function($sco
     
     $scope.addMessage = function(e) { 
        if (e.keyCode === 13 && $scope.task.task && $scope.task.priority) { 
-          var task = $scope.task.task;
-          var priority = $scope.task.priority;
+          $scope.addTask($scope.task);
+       }
+     }
+
+     $scope.addTask = function(myTask) {
+          var task = myTask.task;
+          var priority = myTask.priority;
           $scope.messages.$add({task:task, status:"active", priority:priority});
+          $scope.clearTask();
+     };
+
+     $scope.clearTask = function() {
           // clear task
           $scope.task.task = "";
           $scope.task.status = "";
-          $scope.task.priority= "";
-       }
-     }
+          $scope.task.priority= "";      
+     };
+
+     $scope.completeTask = function(task) {
+       task.status = 'inactive';
+     };
 }]);

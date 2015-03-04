@@ -9,19 +9,9 @@
          height:50px;
  }
 
+/*
  .bloc-navbar{
          margin-left: 120px;
- }
-
-/*
- a.bloc-navbar-item{
-         font-size:1.2em;  
-         text-align: right; 
-         font-weight: 600;
-         letter-spacing: 1.0;
-         text-decoration:underline;
-         cursor: default;
-         color:#1818D6;
  }
 
  a.bloc-navbar:visited {
@@ -38,13 +28,13 @@
 */
 
  .bloc-navbar{
-         margin: 0 0 2px 180px;
+         margin: 0 0 2px 100px;
 
       a {
          color: #344CD4;   
-         font-size:1.2em;  
+         font-size:1em;  
          text-align: right; 
-         font-weight: 600;
+         font-weight: 400;
          letter-spacing: 1.0;
          text-decoration:underline;
          cursor: default;
@@ -60,8 +50,28 @@
          &:visited {
          color:#1E90B9;
          }
-*/     }
+*/ 
+       }
  }
+
+.bloc-navbar-item a{
+         font-size:0.9em;  
+         text-align: right; 
+         font-weight: 500;
+         letter-spacing: 1.0;
+         text-decoration:underline;
+         cursor: default;
+         color:#1818D6;
+         padding-left:10px
+ }
+
+.complete-btn{
+         background-color:#6262F6; 
+}
+
+.complete-btn:hover{
+         background-color:#9A9AFA;
+}
 
  .navbar-profile{
          padding-left:190px;
@@ -83,28 +93,6 @@
        }
     }     
   }
-
-  .task-header{
-         line-height:30px;
-         width:100%;
-         background:#C4C4CE;
-         /*display:block; */
-         color:#3F3F3B;
-         font-family: "Noto Sans";
-         font-size:1em;
-         text-align:middle;
-         padding-left:10px;
-  }
-
- .task-header-space{
-         margin-left:10px;
-         background:#C4C4CE;
- } 
-
- .task-header-space1{
-         margin-left:30px;
-         background:#C4C4CE;
- } 
 
  .add-task{
          height:40px;
@@ -160,18 +148,22 @@
          margin-bottom: 8px;
   }
 
-  .header-title{
+.header-title{
          width:100%; 
          height:40px;
          color:#524b7d;
          background:#A5A5AB;
          vertical-align: middle;
          text-align:left;
-         padding:10px 0 0 10px;
+         padding:10px 0 0 0px;
          font-size:1.6em;
   }
 
-  .title{
+.priority-space{
+         padding-left:50px; 
+  }
+
+.title{
          width:100%; 
          height:100%;
          background:#D1D1CF;
@@ -181,18 +173,73 @@
          vertical-align: middle;
          font-size:1.6em;
   }
-
-  .task-item{
-         height:30px;
+/*
+.task-header{
+         line-height:30px;
          width:100%;
+         background:#C4C4CE;
+         color:#3F3F3B;
+         font-family: "Noto Sans";
+         font-size:1em;
+         text-align:middle;
+         padding-left:0px;
+  }
+
+ .task-header-space{
+         margin-left:10px;
+         background:#C4C4CE;
+ } 
+
+ .task-header-space1{
+         margin-left:60px;
+         background:#C4C4CE;
+ } 
+
+ .task-header-space2{
+         margin-left:35px;
+         background:#C4C4CE;
+ } 
+
+ .task-header-space3{
+         margin-left:35px;
+         background:#C4C4CE;
+ } 
+ 
+ .task-item{
+         height:30px;        
          background:#F5F5EF;
          display:block;
          color:#524b7d;
          text-align:middle;
          font-family: "Noto Sans";
          font-size:1.1em;  
-         padding-left:5px;         
+         padding-left:10px;         
          border:0px 0px 0.1px 0px;
          border-style:solid;
          border-color:#F3F3F3 #F3F3F3 #DEDEDE #F3F3F3;
   }
+  */
+
+ .task-header div{
+         color:#524b7d;
+         background:#D6D6EA;
+         line-height:35px;
+ }
+
+ .title-header {
+         line-height:40px;
+         width:100%;
+         background:#90909B;
+         color:#3F3F3B;
+         font-family: "Noto Sans";
+         font-size:1.5em;
+         text-align:middle;
+         padding-left:15px;
+  }
+
+  .task-item{
+         height:30px;        
+         background:#F5F5EF;
+         font-family: "Noto Sans";
+         font-size:0.9em;  
+  } 
