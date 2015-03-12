@@ -9,13 +9,16 @@
     <div class="col-sm-3 col-md-3 task-header-space2">Status</div>
     <div class="col-sm-3 col-md-3 task-header-space3">Complete</div>
   </div>
-  <div class="row task-item" ng-repeat='task in tasks' ng-hide="task.status=='inactive'">
+  <!--<div class="row task-item" ng-repeat='task in tasks' ng-hide="task.status=='inactive'"> -->
+  <!--<div class="row task-item" ng-repeat="task in tasks | filter:{task.status:'inactive'}"> -->
+  <!--<div class="row task-item" ng-repeat="task in tasks | filter:{status: 'active'}"> -->
+  <div class="row task-item" ng-repeat="task in tasks | filter : status" ng-if="task.status == 'active'"> 
         <!-- display current tasks here. -->
         <div class='col-sm-4 col-md-4'>{{task.task}}</div>
         <div class="col-sm-2 col-md-2 priority-space">{{task.priority}}</div>
         <div class="col-sm-3 col-md-3 priority-space">{{task.status}}</div>
         <div class="col-sm-3 col-md-3">
-            <button class="btn btn-xs complete-btn" ng-controller="addTask.controller" ng-click="completeTask(task)">Complete</button> 
+            <button class="btn btn-xs complete-btn" ng-click="completeTask(task)">Complete</button> 
         </div>
   </div>
   <!--

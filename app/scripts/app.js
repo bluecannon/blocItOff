@@ -36,7 +36,7 @@ blocItOff.config(['$stateProvider', '$locationProvider', function($stateProvider
     });
 }]);
 
-blocItOff.controller('home.controller', ['$scope', '$firebase', function($scope, $firebase) {
+blocItOff.controller('home.controller', ['$scope', '$firebase', function($scope, $firebase, $filter) {
 
     var ref = new Firebase("https://blistering-heat-9377.firebaseIO.com/tasks");
    
@@ -46,39 +46,58 @@ blocItOff.controller('home.controller', ['$scope', '$firebase', function($scope,
     // download the data into a local object
     // $scope.data = sync.$asObject();
 
-    var syncObject = sync.$asObject();
+    //var syncObject = sync.$asObject();
 
     // synchronize the object with a three-way data binding
     // click on `index.html` above to see it used in the DOM!
-    syncObject.$bindTo($scope, "tasks");
+    //syncObject.$bindTo($scope, "tasks");
 
     // Bind ng-model, and create a synchronized array for use in our HTML code, 
     $scope.tasks = sync.$asArray();
     $scope.subText = "Current Tasks";
 }]);
 
-blocItOff.controller('currentTask.controller', ['$scope', '$firebase', function($scope, $firebase) {
+blocItOff.controller('currentTask.controller', ['$scope', '$firebase', function($scope, $firebase, $filter) {
     var ref = new Firebase("https://blistering-heat-9377.firebaseIO.com/tasks");
    
     // create an AngularFire reference to the data
     var sync = $firebase(ref);
 
-    // download the data into a local object
-    // $scope.data = sync.$asObject();
-
     var syncObject = sync.$asObject();
 
-    // synchronize the object with a three-way data binding
-    // click on `index.html` above to see it used in the DOM!
+    // synchronize the object with a three-way data binding using the bindTo() method. 
     syncObject.$bindTo($scope, "tasks");
 
-    // Bind ng-model, and create a synchronized array for use in our HTML code, 
+    // Bind ng-model, and create a Angular synchronized array for use in our HTML code, 
     $scope.tasks = sync.$asArray();
-    $scope.subText = "Current Tasks";
+    $scope.subText = "Current Tasks"; 
 
+     $scope.completeTask = function(task) {
+       task.status = 'inactive';
+     };
+
+    //$scope.findActiveTask = function(task) {
+    //   return task.status === 'active';
+    //};
 }]);
 
-blocItOff.controller('taskHistory.controller', ['$scope', '$firebase', function($scope, $firebase) {
+blocItOff.filter('findActiveTask', function($log) {
+     return function(tasks) {
+        //$log.info(tasks);
+        //return (task.status === 'active');
+        var activeTasks = [];
+        for (var i=0; i<tasks.length; i++) {
+          //$log.info(tasks[i]);
+          if (tasks[i].status === 'active') {
+            activeTasks.push(tasks[i]);
+          }
+        }
+        //$log.info(activeTasks);
+        return activeTasks;
+     };
+});
+
+blocItOff.controller('taskHistory.controller', ['$scope', '$firebase', function($scope, $firebase, $filter) {
     var ref = new Firebase("https://blistering-heat-9377.firebaseIO.com/tasks");
    
     // create an AngularFire reference to the data
@@ -98,7 +117,7 @@ blocItOff.controller('taskHistory.controller', ['$scope', '$firebase', function(
     $scope.subText = "Task History";
 }]);
 
-blocItOff.controller('addTask.controller', ['$scope', '$firebase', function($scope, $firebase) {
+blocItOff.controller('addTask.controller', ['$scope', '$firebase', function($scope, $firebase, $filter) {
     var ref = new Firebase("https://blistering-heat-9377.firebaseIO.com/tasks");
     var sync = $firebase(ref);
 
@@ -136,3 +155,18 @@ blocItOff.controller('addTask.controller', ['$scope', '$firebase', function($sco
        task.status = 'inactive';
      };
 }]);
+
+/*
+blocItOff.filter('findActiveTask', ['$scope', '$firebase', function($scope, $firebase){
+      var ref = new Firebase("https://blistering-heat-9377.firebaseIO.com/tasks");
+      var sync = $firebase(ref);
+
+      $scope.findActiveTask = function(task) {
+
+          if (task.status === 'active'){
+            return true;
+          }
+          else
+            return false;
+     }     
+}]); */
