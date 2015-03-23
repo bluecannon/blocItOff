@@ -1,0 +1,557 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"new",
+				"newTask"
+			],
+			[
+				"asA",
+				"asArray"
+			],
+			[
+				"is",
+				"isMuted"
+			],
+			[
+				"Song",
+				"SongPlayer"
+			],
+			[
+				"Pl",
+				"Playing"
+			],
+			[
+				"p",
+				"playing"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"a",
+				"arrayX"
+			],
+			[
+				"obj",
+				"nameObj"
+			],
+			[
+				"name",
+				"nameObj"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"prot",
+				"prototype"
+			],
+			[
+				"co",
+				"courseStudents"
+			],
+			[
+				"cou",
+				"courseStudents"
+			],
+			[
+				"course",
+				"courseTitle"
+			],
+			[
+				"ary",
+				"aryLen"
+			],
+			[
+				"var",
+				"varRight"
+			],
+			[
+				"str",
+				"stringTwo"
+			],
+			[
+				"sear",
+				"searchString"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/pages/index.html",
+			"settings":
+			{
+				"buffer_size": 1309,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 144.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/pages",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/templates"
+	],
+	"file_history":
+	[
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/blocItOff.sublime-project",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/templates/home.html",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/wp-content/themes/Avada/framework/headers/header-v4.php",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/stylesheets/mobile.scss",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/index.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/templates/collection.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/stylesheets/app.scss",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/templates/currentTask.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/scripts/app.js",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/stylesheets/_landing.scss",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/assets/templates/collection.html",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/pages/index.html",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/templates/taskHistory.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/stylesheets/_profile.scss",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/stylesheets/_collection.scss",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/templates/addTask.html",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/scripts/app.js",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/sass/style.scss",
+		"/C/Users/Harry/Desktop/buttonCss.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/collection.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/templates/landing.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/assets/templates/landing.html",
+		"/C/Users/Harry/Desktop/I.html",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/dist/css/style.css",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/scripts/app-addButton.js",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/templates/addTask-addButton.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/stylesheets/_album.scss",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/stylesheets/_player_bar.scss",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/dist/templates/currentTask.html",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/dist/templates/home.html",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/dist/index.html",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/dist/index_currentTask1.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/templates/album.html",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/pages/index_currentTask1.html",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/stylesheet/style.scss",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/stylesheet/app.css",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/stylesheet/app.scss",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/templates/taskHistory",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/assets/templates/player_bar.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/assets/templates/album.html",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/server.js",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/Gruntfile.js",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/assets/templates/directives/slider.html",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-dev-projects/BlocItOff/public/index.html",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-dev-projects/BlocItOff/app/scripts/acc.js",
+		"/C/Users/Harry/Downloads/notepad2_4.2.25_x86/Notepad2.ini",
+		"/F/Software/Hoover.css/Hover-master/css/hover.css",
+		"/F/CCAC聖谷華人宣道會國語堂/網路事工/avada theme option custom css/custom css backup 1-24-2014",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/scripts/landing.js",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/scripts/collection.js",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/scripts/profile.js",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/scripts/album.js",
+		"/F/CCAC聖谷華人宣道會國語堂/網路事工/avada theme option custom css/custom css backup 1-25-2014",
+		"/F/CCAC聖谷華人宣道會國語堂/網路事工/avada theme option custom css/custom css backup 1-23-2014",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/wp-content/themes/Avada/style.css",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/wp-content/themes/Avada/index.php",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/wp-content/plugins/sermon-browser/sb-includes/frontend.php",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/stylesheets/_player_barbak.scss",
+		"/C/Users/Harry/Desktop/Dan Wahlin - The AngularJS JumpStart Video Training Course Has Been Released!.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/collection-37.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/assets/templates/collection-bak.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/landing.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/index_36-ng_Landing_Page.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/album.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/album_36-ng_Landing_Page.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/collection_36-ng_Landing_Page.html",
+		"/F/eBooks/IT-ebooks/Javascript ebooks/JavaScript The Definitive Guide, 6th Edition/code examples/01.01.loancalc.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/profile.html",
+		"/F/eBooks/IT-ebooks/AngularJS/AngularJS-Oreilly/Angularjs-Book-Master_Code/README.md",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/stylesheets/_buttons.scss",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/ccac.ws-theme backup/Avada-3.6.2/style.css",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/collection_backup_25.html",
+		"/C/xampplite/php/php.ini",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/ccac.ws-theme backup/Avada-3.4.1/style.css",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/stylesheets/app.css",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/stylesheets/app.bak.css",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/album.bak.html",
+		"/C/Users/Harry/Desktop/Untitled-2.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/album_checkout.html",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/ccac.ws-theme backup/Avada-3.6.2/default-template.php",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/wp-content/themes/Avada/css/ie.css",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/wp-content/themes/Avada/style_1103_2014.css",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/ccac.ws-theme backup/style.css",
+		"/C/xampplite/htdocs/xampp/php.php",
+		"/C/xampplite/htdocs/xampp/phpinfo.php",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/wp-content/themes/Avada/style_1102.css",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/wp-content/themes/Avada/style_11_01_2014.css",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/wp-content/themes/Avada/style_11_03_2014_1.css",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/wp-content/themes/Avada/style_1102_2014.css",
+		"/C/Users/Harry/Desktop/preview.html",
+		"/C/Users/Harry/AppData/Local/Temp/tmpXheader/tempSave/preview.html",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/stylesheets/app_1.scss",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/stylesheets/app.scss",
+		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/stylesheets/app.css",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/wp-content/themes/Avada/css/ie10.css",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/wp-content/themes/Avada/css/ie8.css",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/wp-content/index.php",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/wp-content/themes/Avada/framework/headers/header-v4-original.php",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/wp-content/themes/Avada/style_1022_2014.css",
+		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/index.php",
+		"/C/Users/Harry/Documents/Javascript Firebug tester/Bloc_test_1.html",
+		"/C/Users/Harry/Documents/Javascript Firebug tester/Tester/dot-and-bracket-of-object",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/10-loops/02-object-operations/challenge.js",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/09-objects/00-basics/spec.js",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/10-loops/01-iterating-over-an-object/challenge.js",
+		"/C/Users/Harry/Documents/Javascript Firebug tester/js/Bloc_object",
+		"/C/Users/Harry/Documents/Javascript Firebug tester/Bloc_test_object",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/09-objects/00-basics/challenge.js",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/10-loops/00-looping-over-arrays/challenge.js",
+		"/C/Users/Harry/Documents/Javascript Firebug tester/js/Bloc_1.js",
+		"/C/Users/Harry/Documents/Javascript Firebug tester/js/Bloc_0.js",
+		"/C/Users/Harry/Documents/Javascript Firebug tester/js/test.js",
+		"/C/Users/Harry/Documents/Javascript Firebug tester/Tester/js/test-object.js",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/10-loops/02-object-operations/spec.js",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/10-loops/01-iterating-over-an-object/spec.js",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/10-loops/00-looping-over-arrays/spec.js",
+		"/C/Users/Harry/Documents/Javascript Firebug tester/js/Bloc.js",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/09-objects/00-basics/README.md",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/08-arrays/00_Array_Definition/challenge.js",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/04-strings/00-basics/challenge.js",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/05-booleans/00-basics/challenge.js",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/06-functions/00-basics/challenge.js",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/07-if-statements/00-basics/challenge.js",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/08-arrays/01_Array_Functions/challenge.js",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/08-arrays/01_Array_Functions/spec.js",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/04-strings/00-basics/spec.js",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/05-booleans/00-basics/spec.js",
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/06-functions/00-basics/spec.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"C:\\Users\\Harry\\Documents\\Websites\\ccac-mandarin.dev\\wp-content\\plugins\\sermon_browser\\sb_includes\\",
+			"C:\\Users\\Harry\\Nitrous\\codecougar\\bloc-jams\\app\\stylesheets",
+			"C:\\Users\\Harry\\Documents\\Websites\\ccac-mandarin.dev\\wp-content\\themes\\Avada"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"currentTask.controller",
+			"findActiveTask",
+			"currentTask",
+			"/*\n",
+			"nav-header-space",
+			"height",
+			"       ",
+			"port",
+			"play: function {",
+			"volume",
+			"playing",
+			"currentAlbum",
+			"currentSong",
+			"playing",
+			"songPlayer",
+			"<div class='right-controls",
+			"buzz",
+			"currentSoundFile",
+			"volumeClass",
+			"volume-mute",
+			"playing",
+			"fa-volume-off",
+			"currentSong",
+			"volume",
+			"playSong",
+			"pauseSong",
+			"volume",
+			"volumeClass",
+			"fa-volume-down",
+			"play-pause",
+			"song-number",
+			"getSongState",
+			"pauseSong",
+			"pause",
+			"volumeClass",
+			"pause",
+			"currentSoundFile",
+			"SongPlayer",
+			"pause()",
+			"scope.trackThumb = function()",
+			"class=\"thumb\" ng-style=",
+			" <div class=\"thumb\" ng-style=",
+			"<div class=\"thumb\" ng-style=",
+			"i {",
+			"setVolume: function(volume)",
+			"notifyCallback",
+			"blocJams.controller",
+			"blocJams.controller(",
+			"<td class=\"col-md-2\"> {{ song.length",
+			"seek: function(time)",
+			"var notifyCallback = function(newValue) {",
+			"restrict: 'E',",
+			"seek: function(time) {",
+			"templateUrl: '/templates/directives/slider.html',",
+			"<div class='seek-control'>",
+			"blocJams.service('SongPlayer', ['$rootScope',",
+			"<slider value='",
+			"blocJams.controller('playerBar",
+			"scope.onClickSlider =",
+			"restrice: E",
+			"setSong:",
+			"seek: function(time)",
+			"percentString",
+			"<div class='current-time'> {{ songPlayer.playTime }} </div>",
+			"one_half",
+			"bottom-right-widget-bar",
+			".bottom-right-widget-bar",
+			"sub-menu",
+			"bottom-right-widget-item",
+			"bottom-right-widget-",
+			":hover",
+			"Float effect",
+			"hover",
+			"ng-click=\"songPlayer.pause()",
+			"class='previous' ng-click=",
+			"record_count",
+			".seek-bar",
+			"display: incline-block;",
+			"ui-sref=\"album\">",
+			"SongPlayer.play();",
+			"+",
+			"mousedown",
+			"mousedown.thumb",
+			"updateSeekPercentage",
+			"$background-purple: #5B5579;",
+			"collection-album-image-container",
+			"play-pause",
+			"fa-backward",
+			"backgr",
+			"previous",
+			"skip",
+			"collection-container",
+			"row",
+			"fusion-column ",
+			"fusion-column",
+			"fusion-one-third",
+			"KaiT",
+			"one_third",
+			"one-third",
+			"fusion-text",
+			"colmumn-1",
+			"title",
+			"entry-title",
+			"flex-active-slide",
+			"progress-title",
+			"progress-bar",
+			"progress-title",
+			"progress",
+			"progress-bar",
+			"fussion-one-half",
+			"progress",
+			"progress-bar-content",
+			"progress-title.sr-only",
+			"progress-title",
+			"fussion-progressbar",
+			"progress-bar",
+			"progress",
+			"progress-bar-content",
+			"sidebar",
+			"a0ce4e",
+			"progress-bar",
+			"progress-title",
+			"h2",
+			"heading-title-left",
+			"h2",
+			"title-heading-left",
+			"avada-row",
+			"page-title-container"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" task-header-space",
+			" ",
+			"'华文细黑'",
+			"",
+			"'华文细黑'",
+			"'微软雅黑'",
+			"'Microsoft Yahei'",
+			"'宋体'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/pages/index.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1309,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								727,
+								727
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 124.0
+	},
+	"project": "blocItOff.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

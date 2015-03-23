@@ -55,6 +55,18 @@ blocItOff.controller('home.controller', ['$scope', '$firebase', function($scope,
     // Bind ng-model, and create a synchronized array for use in our HTML code, 
     $scope.tasks = sync.$asArray();
     $scope.subText = "Current Tasks";
+
+    // Harry 3-23-2015
+    $scope.searchObj = {status: "active"};
+    $scope.searchCriteria = function(value,index) {
+        if (value.status === "active"){
+           return true
+        } 
+        else {
+             return false
+        }      
+    }
+
 }]);
 
 blocItOff.controller('currentTask.controller', ['$scope', '$firebase', function($scope, $firebase, $filter) {
