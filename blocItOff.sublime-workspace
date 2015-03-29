@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"sync",
+				"syncObj"
+			],
+			[
 				"new",
 				"newTask"
 			],
@@ -96,22 +100,103 @@
 	"buffers":
 	[
 		{
+			"file": "app/templates/currentTask.html",
+			"settings":
+			{
+				"buffer_size": 2213,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "app/pages/index.html",
 			"settings":
 			{
-				"buffer_size": 1309,
+				"buffer_size": 1412,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/scripts/app.js",
+			"settings":
+			{
+				"buffer_size": 4761,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/sass/style.scss",
+			"settings":
+			{
+				"buffer_size": 4608,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/scripts/test.js",
+			"settings":
+			{
+				"buffer_size": 85,
+				"line_ending": "Windows",
+				"name": "console.log(\"Harry's blocItOff test in sublime tex"
+			}
+		},
+		{
+			"file": "app/bak/app.js",
+			"settings":
+			{
+				"buffer_size": 6258,
 				"line_ending": "Windows"
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/User/JavaScript.sublime-build",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 265.0,
 		"selected_items":
 		[
+			[
+				"web ",
+				"Web Inspector"
+			],
+			[
+				"web",
+				"Web Inspector"
+			],
+			[
+				"we",
+				"Web Inspector"
+			],
+			[
+				"w",
+				"Web Inspector"
+			],
+			[
+				"Web",
+				"Web Inspector"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Channel"
+			]
 		],
-		"width": 0.0
+		"width": 464.0
 	},
 	"console":
 	{
@@ -135,10 +220,26 @@
 		"/C/Users/Harry/Nitrous/codecougar/blocItOff",
 		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app",
 		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/pages",
-		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/templates"
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/sass",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/scripts",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/templates",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/dist",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/dist/css"
 	],
 	"file_history":
 	[
+		"/C/Users/Harry/AppData/Roaming/Sublime Text 3/Packages/User/swi.sublime-settings",
+		"/C/Users/Harry/SublimeWebInspector/Main.sublime-menu",
+		"/C/Users/Harry/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/Harry/AppData/Roaming/Sublime Text 3/Packages/Web Inspector/swi.sublime-settings",
+		"/C/Users/Harry/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/pages/index_currentTask1.html",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/sass/style.scss",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/dist/css/style.css",
+		"/C/Users/Harry/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Harry/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript.sublime-build",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/bak/app-0323-1.js",
+		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/bak/app.js",
 		"/C/Users/Harry/Nitrous/codecougar/blocItOff/blocItOff.sublime-project",
 		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/templates/home.html",
 		"/C/Users/Harry/Documents/Websites/ccac-mandarin.dev/wp-content/themes/Avada/framework/headers/header-v4.php",
@@ -156,13 +257,11 @@
 		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/stylesheets/_collection.scss",
 		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/templates/addTask.html",
 		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/scripts/app.js",
-		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/sass/style.scss",
 		"/C/Users/Harry/Desktop/buttonCss.html",
 		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/collection.html",
 		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/templates/landing.html",
 		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/assets/templates/landing.html",
 		"/C/Users/Harry/Desktop/I.html",
-		"/C/Users/Harry/Nitrous/codecougar/blocItOff/dist/css/style.css",
 		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/scripts/app-addButton.js",
 		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/templates/addTask-addButton.html",
 		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/app/stylesheets/_album.scss",
@@ -172,7 +271,6 @@
 		"/C/Users/Harry/Nitrous/codecougar/blocItOff/dist/index.html",
 		"/C/Users/Harry/Nitrous/codecougar/blocItOff/dist/index_currentTask1.html",
 		"/C/Users/Harry/Nitrous/codecougar/bloc-jams/public/templates/album.html",
-		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/pages/index_currentTask1.html",
 		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/stylesheet/style.scss",
 		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/stylesheet/app.css",
 		"/C/Users/Harry/Nitrous/codecougar/blocItOff/app/stylesheet/app.scss",
@@ -257,16 +355,7 @@
 		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/10-loops/00-looping-over-arrays/spec.js",
 		"/C/Users/Harry/Documents/Javascript Firebug tester/js/Bloc.js",
 		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/09-objects/00-basics/README.md",
-		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/08-arrays/00_Array_Definition/challenge.js",
-		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/04-strings/00-basics/challenge.js",
-		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/05-booleans/00-basics/challenge.js",
-		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/06-functions/00-basics/challenge.js",
-		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/07-if-statements/00-basics/challenge.js",
-		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/08-arrays/01_Array_Functions/challenge.js",
-		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/08-arrays/01_Array_Functions/spec.js",
-		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/04-strings/00-basics/spec.js",
-		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/05-booleans/00-basics/spec.js",
-		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/06-functions/00-basics/spec.js"
+		"/C/Users/Harry/Nitrous/codecougar/frontend-javascript-exercises/08-arrays/00_Array_Definition/challenge.js"
 	],
 	"find":
 	{
@@ -440,29 +529,475 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/pages/index.html",
-					"semi_transient": true,
+					"file": "app/templates/currentTask.html",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1309,
+						"buffer_size": 2213,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								727,
-								727
+								1514,
+								1514
 							]
 						],
 						"settings":
 						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
 							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 177.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/pages/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1412,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								481,
+								481
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 129.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/scripts/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4761,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2120,
+								2120
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1596.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/sass/style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4608,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								116,
+								116
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/scripts/test.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 85,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								85,
+								85
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"auto_name": "console.log(\"Harry's blocItOff test in sublime tex",
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/bak/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6258,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								712,
+								712
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -470,9 +1005,19 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -491,22 +1036,40 @@
 			[
 				0,
 				0,
-				1,
+				2,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.169261880688,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
+			0.648760330578,
 			1.0
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 88.0
+	},
 	"output.find_results":
 	{
 		"height": 124.0
@@ -549,7 +1112,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 192.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

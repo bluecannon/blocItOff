@@ -7,7 +7,6 @@
     <div class="col-sm-4 col-md-4">Task</div>
     <div class="col-sm-2 col-md-2 task-header-space1">Priority</div>
     <!-- <div class="task-header-space"></div>Start date -->
-    <!-- <span class="task-header-space"></span>End date  -->
     <div class="col-sm-3 col-md-3 task-header-space2">Status</div>
     <div class="col-sm-3 col-md-3 task-header-space3">Complete</div>
   </div>
@@ -21,26 +20,26 @@
          <button class="btn btn-xs complete-btn" ng-click="completeTask(task)">Complete</button> 
     </div>
   </div>
-     <div id="add-task">
-           <br/>    
-           <input ng-model="task.task"                            
-                  type="text" 
-                  name="task" 
-                  id="taskDescription"
-                  placeholder="enter task description">
-           <br/>         
-           <input ng-model="task.priority"
-                  ng-keydown="addMessage($event)" 
-                  type="text" 
-                  name="priority"
-                  id="taskPriority"
-                  placeholder="enter priority:high/mid/low">
-
-           <span class="add-task-bar"></span>
-           <br/>
-        <div>
-           <button type="submit" class="btn btn-sm add-task-btn" ng-click='addTask(task)'>Add</button>
-        </div>
+  <div id="add-task">
+    <div>  
+      <input ng-model="task.task"                            
+             type="text" 
+             name="task" 
+             id="taskDescription"
+             placeholder="enter task description">
     </div>
-    <footer></footer> 
+    <div>         
+      <input ng-model="task.priority"
+             ng-keydown="addMessage($event)" 
+             type="text" 
+             name="priority"
+             id="taskPriority"
+             placeholder="enter priority:high/mid/low">
+      <span class="add-task-bar"></span>
+    </div>
+    <div>
+      <button type="submit" class="btn btn-sm add-task-btn" ng-click='addTask(task)'>Add</button>
+    </div>
+  </div>
+  <footer></footer> 
 </section> 
