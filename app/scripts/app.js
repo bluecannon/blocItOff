@@ -70,6 +70,20 @@ blocItOff.controller('taskHistory.controller', function($scope, $firebaseArray, 
 
     $scope.tasks = $firebaseArray(ref);
     $scope.subText = "Task History";
+
+    
+    $scope.removeTask = function(myTask) {
+          /*var task = myTask.task;
+          var priority = myTask.priority;*/
+          $scope.tasks.$remove(myTask); 
+          $scope.clearTask();
+    };
+    $scope.clearTask = function() {
+          // clear task
+          $scope.task.task = "";
+          $scope.task.status = "";
+          $scope.task.priority= "";      
+    };
 });
 
 blocItOff.controller('addTask.controller', function($scope, $firebaseArray, $firebaseObject) {

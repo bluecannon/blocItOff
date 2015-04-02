@@ -18,13 +18,13 @@
    <script src="/js/app.js"></script>
 </head>
 <body>  
-  <div class="row bloc-navbar-item"> 
-        <a class="col-sm-4 col-md-4" ui-sref='home'>Home</a>
-        <a class="col-sm-4 col-md-4" ui-sref='taskHistory'>Task history</a>
-        <a class="col-sm-4 col-md-4" ui-sref='currentTask'>Active tasks</a>
+  <div class="container"> 
+        <a class="title-menu" ui-sref='home'>Home</a>
+        <a class="title-menu" ui-sref='taskHistory'>Task history</a>
+        <a class="title-menu" ui-sref='currentTask'>Active tasks</a>
   </div>
   <div class="container">
-       <div class="col-md-6" ui-view></div>
+       <div ui-view></div>
   </div>
 </body>
 </html>

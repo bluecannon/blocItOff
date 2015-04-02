@@ -1,25 +1,32 @@
-<section>
+
   <div class="row">
-    <header class="col-sm-12 col-md-12 title-header">Add Tasks</header>
+    <header class="title-header">Add Tasks</header>
   </div>
   <!-- task-header -->
-  <div class="task-header row">   
-    <div class="col-sm-4 col-md-4">Task</div>
-    <div class="col-sm-2 col-md-2 task-header-space1">Priority</div>
-    <!-- <div class="task-header-space"></div>Start date -->
-    <div class="col-sm-3 col-md-3 task-header-space2">Status</div>
-    <div class="col-sm-3 col-md-3 task-header-space3">Complete</div>
-  </div>
-  <div class="row task-item" ng-repeat='task in tasks' ng-hide="task.status=='inactive'">
-    <!-- display current tasks here. -->
-    <div class='col-sm-4 col-md-4'>{{task.task}}</div>
-    <div class="col-sm-2 col-md-2 priority-space">{{task.priority}}</div>
-    <div class="col-sm-3 col-md-3 priority-space">{{task.status}}</div>
-    <div class="col-sm-3 col-md-3">
-         <!--<span ng-app="ngToggle" ng-controller="toggle.controller">-->
-         <button class="btn btn-xs complete-btn" ng-click="completeTask(task)">Complete</button> 
-    </div>
-  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Priority</th>
+        <th>Status</th>
+        <th>Complete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="task in tasks | filter:{status:'inactive'}:true">
+        <!-- display tasks. -->
+        <td>{{task.task}}</td>
+        <td>{{task.priority}}</td>
+        <td>{{task.status}}</td>
+        <td>
+          <form ng-submit="completeTask(task)">
+            <button type="submit" class="btn btn-xs complete-btn">Complete</button> 
+          </form>
+        </td>
+      </tr>
+    </tbody>
+  </table> 
+
   <div id="add-task">
     <div>  
       <input ng-model="task.task"                            
@@ -38,8 +45,6 @@
       <span class="add-task-bar"></span>
     </div>
     <div>
-      <button type="submit" class="btn btn-sm add-task-btn" ng-click='addTask(task)'>Add</button>
+      <button type="submit" class="btn btn-xs add-task-btn" ng-click='addTask(task)'>Submit</button>
     </div>
   </div>
-  <footer></footer> 
-</section> 

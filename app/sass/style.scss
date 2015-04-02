@@ -1,36 +1,86 @@
- html,body{
+ /* 3-28-2015 css for responsive data table*/
+ /* Generic Styling, for Desktops/Laptops  */
+table { 
+   width: 100%; 
+   border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+   background: #eee; 
+}
+th { 
+   background: #333; 
+   color: white; 
+   font-weight: bold; 
+}
+td, th { 
+   padding: 6px; 
+   border: 1px solid #ccc; 
+   text-align: left; 
+}
+
+/* Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically. */
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr { 
+        display: block; 
+    }
+    
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    tr { border: 1px solid #ccc; }
+    
+    td { 
+        border: none;  /* Behave  like a "row" */
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50%; 
+    }
+    
+    td:before { 
+        position: absolute; /* Now like a table header */
+        top: 6px;           /* Top/left values mimic padding */
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+    }
+    
+   /* Label the data */
+    td:nth-of-type(1):before { content: "Task"; }
+    td:nth-of-type(2):before { content: "Priority"; }
+    td:nth-of-type(3):before { content: "Status"; }
+    td:nth-of-type(4):before { content: "Complete"; }
+    td:nth-of-type(5):before { content: "Remove"; }
+}
+/* end of responsive data table */
+
+html,body{
          padding:0;
          margin:20px 0 0 40px;
          height:500px;
-         width:370px;
-  }
+         /* width:370px; */
+         width:100%;
+}
 
- .row-height{
+.row-height{
          height:50px;
- }
+}
 
-/*
- .bloc-navbar{
-         margin-left: 120px;
- }
-
- a.bloc-navbar:visited {
-         color:#1E90B9;
- }
-
- a.bloc-navbar:hover {
-         color:#B818A0;
- } 
-
- a.bloc-navbar:active {
-         color:#0B803E;
- }
-*/
-
- .bloc-navbar{
+.bloc-navbar{
          margin: 0 0 2px 100px;
-
-      a {
+    a {
          color: #344CD4;   
          font-size:1em;  
          text-align: right; 
@@ -46,13 +96,13 @@
          &:active {
          color: #0B803E;
          }
-/*
+      /*
          &:visited {
          color:#1E90B9;
          }
-*/ 
-       }
- }
+       */ 
+    }
+}
 
 .bloc-navbar-item a{
          font-size:0.9em;  
@@ -69,11 +119,15 @@
          background-color:#6262F6; 
 }
 
+.complete-btn-location {
+         margin-top:30px;    
+}
+
 .complete-btn:hover{
          background-color:#9A9AFA;
 }
 
- .navbar-profile{
+.navbar-profile{
          padding-left:190px;
       a {
          color:#0C2A8D;
@@ -92,9 +146,9 @@
          text-decoration:underline;
        }
     }     
-  }
+}
 
- .add-task{
+.add-task{
          height:40px;
          width:370px;
          background:#E3E3DE;
@@ -102,13 +156,13 @@
          color:#3F3F3B;
          font-family: "Noto Sans";
          font-size:1.0em;
- }
+}
 
- .left-space{
+.left-space{
     margin-left:30px;
- }
+}
 
- .add-task-button {
+.add-task-button {
          position: relative;
          top: 80px;
          left: 150px;
@@ -119,15 +173,15 @@
          font-size:1.4em;
          font-weight:bold;
          color:#fcfcfc；
-  }
+}
 
-  .add-task-btn{
+.add-task-btn{
          background:#2567C3;
          color:#fff;
          font-size:1.2em;
-  }
+}
 
-  .home-content{
+.home-content{
          width:100%;
          height:380px;
          color:#525657;
@@ -137,31 +191,26 @@
          font-size:1.5em;
          padding: 20px 0 0 10px;
          text-align: middle;
-  }
+}
 
-  .h1-section{
+.h1-section{
          color:#2a2374;
          font-weight:bold;
          font-family: "Times New Roman";
          font-size:1.5em;
          margin-left: 180px;
          margin-bottom: 8px;
-  }
+}
 
-.header-title{
-         width:100%; 
-         height:40px;
-         color:#524b7d;
-         background:#A5A5AB;
-         vertical-align: middle;
-         text-align:left;
-         padding:10px 0 0 0px;
-         font-size:1.6em;
-  }
+.currentTask-header{
+         padding: 6px; 
+         border: 1px solid #ccc; 
+         text-align: left;   
+}
 
 .priority-space{
          padding-left:50px; 
-  }
+}
 
 .title{
          width:100%; 
@@ -172,8 +221,67 @@
          display: table-cell;
          vertical-align: middle;
          font-size:1.6em;
-  }
-/*
+}
+
+.task-header div{
+         color:#524b7d;
+         background:#D6D6EA;
+         line-height:35px;
+}
+
+.title-header, .title-menu{
+         line-height:40px;
+         width:100%;       
+         color:#3F3F3B;
+         font-family: "Noto Sans";
+         text-align:middle;
+         padding-left:20px;
+}
+
+header.title-header {
+        font-size:1.4em;
+        background:#90909B;
+}
+
+a.title-menu{
+         font-size:0.9em;
+         background:#F5F5EF;
+}
+
+.task-item{
+         height:30px;        
+         background:#F5F5EF;
+         font-family: "Noto Sans";
+         font-size:0.9em;  
+} 
+
+/****************************
+.bloc-navbar{
+         margin-left: 120px;
+}
+
+a.bloc-navbar:visited {
+         color:#1E90B9;
+}
+
+a.bloc-navbar:hover {
+         color:#B818A0;
+} 
+
+a.bloc-navbar:active {
+         color:#0B803E;
+}
+
+.header-title{
+         width:100%; 
+         height:40px;
+         color:#524b7d;
+         background:#A5A5AB;
+         vertical-align: middle;
+         text-align:left;
+         font-size:1.6em;
+}
+
 .task-header{
          line-height:30px;
          width:100%;
@@ -183,29 +291,29 @@
          font-size:1em;
          text-align:middle;
          padding-left:0px;
-  }
+}
 
- .task-header-space{
+.task-header-space{
          margin-left:10px;
          background:#C4C4CE;
- } 
+} 
 
- .task-header-space1{
+.task-header-space1{
          margin-left:60px;
          background:#C4C4CE;
- } 
+} 
 
- .task-header-space2{
+.task-header-space2{
          margin-left:35px;
          background:#C4C4CE;
- } 
+} 
 
- .task-header-space3{
+.task-header-space3{
          margin-left:35px;
          background:#C4C4CE;
- } 
+} 
  
- .task-item{
+.task-item{
          height:30px;        
          background:#F5F5EF;
          display:block;
@@ -217,29 +325,5 @@
          border:0px 0px 0.1px 0px;
          border-style:solid;
          border-color:#F3F3F3 #F3F3F3 #DEDEDE #F3F3F3;
-  }
-  */
-
- .task-header div{
-         color:#524b7d;
-         background:#D6D6EA;
-         line-height:35px;
- }
-
- .title-header {
-         line-height:40px;
-         width:100%;
-         background:#90909B;
-         color:#3F3F3B;
-         font-family: "Noto Sans";
-         font-size:1.5em;
-         text-align:middle;
-         padding-left:15px;
-  }
-
-  .task-item{
-         height:30px;        
-         background:#F5F5EF;
-         font-family: "Noto Sans";
-         font-size:0.9em;  
-  } 
+}
+*******************************/

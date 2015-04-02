@@ -1,23 +1,34 @@
-<section>
+
   <div class="row">
-    <header class="col-sm-12 col-md-12 title-header">Task History</header>
+    <header class="title-header">Task History</header>
   </div>
    <!-- task-header -->
-  <div class="task-header row">   
-    <div class="col-sm-4 col-md-4">Task</div>
-    <div class="col-sm-2 col-md-2 task-header-space1">Priority</div>
-    <div class="col-sm-3 col-md-3 task-header-space2">Status</div>
-    <div class="col-sm-3 col-md-3 task-header-space3">Complete</div>
-  </div>   
-  <div class="row task-item" ng-repeat='task in tasks' ng-show="task.status=='inactive'">    
-     <!-- display inactive tasks. -->
-     <div class='col-sm-4 col-md-4'>{{task.task}}</div>
-     <div class="col-sm-2 col-md-2 priority-space">{{task.priority}}</div>
-     <div class="col-sm-3 col-md-3 priority-space">{{task.status}}</div>
-     <div class="col-sm-3 col-md-3"></div>
-  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Priority</th>
+        <th>Status</th>
+        <th>Complete</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+
+   <tbody>
+      <tr ng-repeat="task in tasks | filter:{status:'inactive'}:true">
+        <!-- display current tasks. -->
+        <td>{{task.task}}</td>
+        <td>{{task.priority}}</td>
+        <td>{{task.status}}</td>
+        <td><span class="glyphicon glyphicon-ok"></span></td>
+        <td>
+          <form ng-submit="removeTask(task)">
+            <button type="submit" class="btn btn-xs btn-danger">Remove</button> 
+          </form>
+        </td>
+      </tr>
+    </tbody>
+  </table>
   <div>
-      <button type="button" class="btn btn-default btn-lg add-task-btn" ui-sref='addTask'>Add task</button>
+      <button type="button" class="btn btn-default btn-xs add-task-btn" ui-sref='addTask'>Add task</button>
   </div>      
-<footer></footer>    
-</section>
